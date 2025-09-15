@@ -73,9 +73,12 @@
 
 //console.log("Sua pontuação para o concurso é: " + pontuacaoTotal + " pontos.");
 
+/////////////////////parseFloat//////////////////////////
 
+let notaUsuario = Number(prompt("Insira uma nota"));
 
-
-
-
-
+if (notaUsuario >= 7.0 && notaUsuario <= 10.0) {
+    console.log("A nota está entre 7.0 e 10.0.");
+} else {
+    console.log("A nota não está entre 7.0 e 10.0.");
+}
