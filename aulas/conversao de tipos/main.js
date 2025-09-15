@@ -40,4 +40,38 @@
 //}
 
 
+//let idade = Number(prompt('Insira sua idade'));
+//let renda = Number(prompt('Insira sua renda (em salários mínimos)'));
+
+//if (idade >= 18 && renda >= 2) {
+//    console.log('Parabéns você está apto para realizar um consórcio.');
+//} else {
+//    console.log('Você não possui os requisitos mínimos para fazer um financiamento.');
+//}
+
+
+
+let experiencia = Number(prompt("Quantos anos de experiência você possui?"));
+let formacao = prompt("Qual sua formação? (superior, pos-graduacao, mestrado, doutorado)").toLowerCase();
+
+let pontosExperiencia = experiencia < 5 ? 10 : 20;
+
+let pontosFormacao = 0;
+if (formacao === "superior") {
+    pontosFormacao = 10;
+} else if (formacao === "pos-graduacao" || formacao === "pós-graduação") {
+    pontosFormacao = 20;
+} else if (formacao === "mestrado") {
+    pontosFormacao = 30;
+} else if (formacao === "doutorado") {
+    pontosFormacao = 40;
+} else {
+    alert("Formação inválida.");
+}
+
+let pontuacaoTotal = pontosExperiencia + pontosFormacao;
+
+console.log("Sua pontuação para o concurso é: " + pontuacaoTotal + " pontos.");
+
+
 
