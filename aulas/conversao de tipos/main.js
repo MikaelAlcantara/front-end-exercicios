@@ -32,13 +32,16 @@
 
 
 //let login = prompt ("Insira sua senha")
+//let loginSenha = '123456'
 
-//if (login == Mikael || login == Nostodos) {
-//   console.log ("Está senha já está sendo utilizada por" + Mikael)
+//if (login == loginSenha) {
+// //  console.log ("Acesso Permitido!")
 //} else {
-//    alert ("Senha cadastrada com sucesso !")
+//    alert ("Acesso Negado")
 //}
 
+
+//EXEMPLO 4
 
 //let idade = Number(prompt('Insira sua idade'));
 //let renda = Number(prompt('Insira sua renda (em salários mínimos)'));
@@ -50,35 +53,38 @@
 //}
 
 
+//EXEMPLO 5
 
-//let experiencia = Number(prompt("Quantos anos de experiência você possui?"));
-//let formacao = prompt("Qual sua formação? (superior, pos-graduacao, mestrado, doutorado)").toLowerCase();
 
-//let pontosExperiencia = experiencia < 5 ? 10 : 20;
+let experiencia = Number(prompt("Quantos anos de experiência você possui?"));
+let formacao = prompt("Qual sua formação? (superior, pos-graduacao, mestrado, doutorado)").toLowerCase();
 
-//let pontosFormacao = 0;
-//if (formacao === "superior") {
-//    pontosFormacao = 10;
-//} else if (formacao === "pos-graduacao" || formacao === "pós-graduação") {
-//    pontosFormacao = 20;
-//} else if (formacao === "mestrado") {
-//    pontosFormacao = 30;
-//} else if (formacao === "doutorado") {
-//    pontosFormacao = 40;
-//} else {
-//    alert("Formação inválida.");
-//}
+let pontosExperiencia = experiencia < 5 ? 10 : 20;
 
-//let pontuacaoTotal = pontosExperiencia + pontosFormacao;
+let pontosFormacao = 0;
 
-//console.log("Sua pontuação para o concurso é: " + pontuacaoTotal + " pontos.");
+if (formacao === "superior") {
+    pontosFormacao = 10;
+} else if (formacao === "pos-graduacao" || formacao === "pós-graduação") {
+    pontosFormacao = 20;
+} else if (formacao === "mestrado") {
+    pontosFormacao = 30;
+} else if (formacao === "doutorado") {
+    pontosFormacao = 40;
+} else {
+    alert("Formação inválida.");
+}
+
+let pontuacaoTotal = pontosExperiencia + pontosFormacao;
+
+console.log("Sua pontuação para o concurso é: " + pontuacaoTotal + " pontos.");
 
 /////////////////////parseFloat//////////////////////////
 
-let notaUsuario = Number(prompt("Insira uma nota"));
+//let notaUsuario = Number(prompt("Insira uma nota"));
 
-if (notaUsuario >= 7.0 && notaUsuario <= 10.0) {
-    console.log("A nota está entre 7.0 e 10.0.");
-} else {
-    console.log("A nota não está entre 7.0 e 10.0.");
-}
+//if (notaUsuario >= 7.0 && notaUsuario <= 10.0) {
+//    console.log("A nota está entre 7.0 e 10.0.");
+//} else {
+//    console.log("A nota não está entre 7.0 e 10.0.");
+//}
