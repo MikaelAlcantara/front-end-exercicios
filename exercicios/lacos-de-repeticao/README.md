@@ -1,4 +1,4 @@
-# Exercícios
+'# Exercícios
 
 Faça os exercícios a seguir escrevendo código JavaScript a ser vinculado à sua página HTML com a tag `<script>`.
 
