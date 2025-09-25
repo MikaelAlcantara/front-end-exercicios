@@ -1,12 +1,12 @@
 let usoDiasDaSemana = [1, 2, 2.4, 5, 1.2, 0.5, 12]; //Domingo, segunda...
 let diasDaSemana = [
-    'Domingo',
+    'Domingo      ',
     'Segunda-feira',
-    'Terça-feira',
-    'Quarta-feira',
-    'Quinta-feira',
-    'Sexta-feira',
-    'Sábado'
+    'Terça-feira  ',
+    'Quarta-feira ',
+    'Quinta-feira ',
+    'Sexta-feira  ',
+    'Sábado       '
 ];
 
 // Determinar se o uso do dia é verde, amarelo ou vermelho
@@ -22,12 +22,19 @@ const IndicadorDeUso = (numeroDeHoras) => {
 
 
 
-for (let contador = 0; contador<=6 ; contador++) {
+for (let contador = 0; contador<= usoDiasDaSemana.length ; contador++) {
      let farol = IndicadorDeUso(usoDiasDaSemana[contador])
      let dia = diasDaSemana[contador];
      let horas = usoDiasDaSemana[contador];
+    //  let mensagem = 'hora de uso'
+
      
-     console.log(` ${farol} 📅 ${dia} | ${horas} horas de uso`);
+    //  if ( horas > 1 ) {
+    //     mensagem = 'horas de uso';
+    //  } 
+     let mensagem = (horas > 1) ? 'horas de uso' : 'hora de uso'; // Operador ternário
+
+     console.log(` ${farol} 📅 ${dia} | ${horas} ${mensagem}`);
 
 }
 
