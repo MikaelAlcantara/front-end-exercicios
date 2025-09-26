@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Livraria DOM - Exercício</title>
+        <link rel="stylesheet" href="css/pico/pico.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header class="header container">
+            <h1 id="titulo-site">📚 Livraria DOM</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#livros">Livros</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-content container">
+            <!-- Seção de Livros -->
+            <section id="secao-livros" class="livros">
+                <h2>Nossa Coleção</h2>
+               
+                <div id="container-livros" class="cards-container grid">
+                    <div id="o-cortico" class="card-livro">
+                        <img
+                            class="capa-livro"
+                            src="images/capas/o-cortico.jpeg"
+                        />
+                        <h3 class="titulo-livro">O Cortiço</h3>
+                        <p class="descricao-livro">
+                            O Cortiço é um romance naturalista do brasileiro
+                            Aluísio Azevedo, publicado em 1890[1][2], que
+                            denuncia a exploração e as péssimas condições de
+                            vida dos moradores das estalagens ou dos cortiços
+                            cariocas do final do século XIX e posto a denunciar
+                            o capitalismo selvagem.
+                        </p>
+                        <span class="preco-livro">R$ 29,99</span>
+                    </div>
+
+                    <div id="dom-casmurro" class="card-livro">
+                        <img
+                            class="capa-livro"
+                            src="images/capas/dom-casmurro.webp"
+                        />
+                        <h3 class="titulo-livro">Dom Casmurro</h3>
+                        <p class="descricao-livro">
+                            Dom Casmurro é um romance escrito por Machado de
+                            Assis, publicado em 1899 pela Livraria Garnier.
+                            Escrito para publicação em livro, o que ocorreu em
+                            1900 – embora com data do ano anterior, ao contrário
+                            de Memórias Póstumas de Brás Cubas (1881) e Quincas
+                            Borba (1891), escritos antes em folhetins –, é
+                            considerado pela crítica o terceiro romance da
+                            "Trilogia Realista" de Machado de Assis, ao lado
+                            desses outros dois, embora o próprio autor não tenha
+                            formulado esta categoria.
+                        </p>
+                        <span class="preco-livro">R$ 59,99</span>
+                    </div>
+
+                    <div id="vidas-secas" class="card-livro">
+                        <img
+                            class="capa-livro"
+                            src="images/capas/vidas-secas.jpg"
+                        />
+                        <h3 class="titulo-livro">Vidas Secas</h3>
+                        <p class="descricao-livro">
+                            Quarto e último romance de Graciliano, narrado em
+                            terceira pessoa, Vidas Secas aborda uma família de
+                            retirantes do sertão nordestino condicionada a uma
+                            vida subumana, diante de problemas como a seca, a
+                            miséria, a fome, a desigualdade social, as lutas de
+                            classes e, consecutivamente, o caleidoscópio de
+                            sentimentos, pensamentos, desejos e emoções,
+                            misturados à aspereza e ao clima do semiárido, que a
+                            condição lhes obriga a viver e a procurar meios de
+                            sobrevivência, expressando, assim, um espelhamento
+                            artístico ainda muito forte com a denúncia política
+                            e a situação histórico-social.
+                        </p>
+                        <span class="preco-livro">R$ 34,29</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer container">
+            <p id="info-footer">2024 Livraria DOM. Uso livre do conteúdo.</p>
+            <nav class="footer-links">
+                <ul class="nav-list">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#politica">Política de Privacidade</a></li>
+                    <li><a href="#termos">Termos de Uso</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
