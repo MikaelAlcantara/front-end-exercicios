@@ -1,0 +1,33 @@
+body {
+    width: 60%;
+    margin-left: 25%;
+}
+
+
+
+#botao-dog {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px rgb(16, 120, 161) solid;
+    cursor: pointer;
+}
+
+#foto-dog {
+    padding: 20px;
+    border: 1px rgb(16, 120, 161) solid;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.bloco-pet {
+    margin-top: 20px;
+    display: flex;
+    width: 442px;
+    height: 410px;
+    height: auto;
+    overflow: hidden;
+    background-color: aqua;
+    border-radius: 10px ;
+
+
+}
